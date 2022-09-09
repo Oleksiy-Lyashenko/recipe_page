@@ -1,6 +1,9 @@
 import dots from './assets/6dots.svg';
 import headerImg from './assets/photo1.png';
 
+import { BsClock } from 'react-icons/bs';
+import { GiKnifeFork } from 'react-icons/gi';
+
 function App() {
   return (
     <div className="page">
@@ -27,6 +30,58 @@ function App() {
       <div className="content">
         <div className="wrapper">
           <div className="content__body">
+            <div className="time-block__item time-block__item--mobile">
+              <GiKnifeFork size="28px" color="#F2994A" className="time-block__svg" />
+
+              <div className="time-block__text-block">
+                <p className="time-block__title">Yields</p>
+
+                <p className="time-block__subtitle time-block__subtitle--orange">12 servings</p>
+              </div>
+            </div>
+
+            <div className="time-block">
+              <div className="time-block__item time-block__item--desktop">
+                <GiKnifeFork size="28px" color="#F2994A" className="time-block__svg" />
+
+                <div className="time-block__text-block">
+                  <p className="time-block__title">Yields</p>
+
+                  <p className="time-block__subtitle time-block__subtitle--orange">12 servings</p>
+                </div>
+              </div>
+
+              <div className="time-block__item">
+                <BsClock size="28px" className="time-block__svg" />
+
+                <div className="time-block__text-block">
+                  <p className="time-block__title">Prep TIme</p>
+
+                  <p className="time-block__subtitle">45 minutes</p>
+                </div>
+              </div>
+
+              <div className="time-block__item">
+                <BsClock size="28px" className="time-block__svg" />
+
+                <div className="time-block__text-block">
+                  <p className="time-block__title">Cook Time</p>
+
+                  <p className="time-block__subtitle">1 hour</p>
+                </div>
+              </div>
+
+              <div className="time-block__item">
+                <BsClock size="28px" className="time-block__svg" />
+
+                <div className="time-block__text-block">
+                  <p className="time-block__title">Total Time</p>
+
+                  <p className="time-block__subtitle">7,75 hours</p>
+                </div>
+              </div>
+            </div>
+
             <article className="ingredients">
               <h2 className="content__title">Ingredients</h2>
 
@@ -131,7 +186,7 @@ function App() {
             </article>
 
             <article className="instructions">
-              <h2 className="content__title">Instructions</h2>
+              <h2 className="content__title content__title--instructions">Instructions</h2>
 
               <div className="instructions__text-block">
                 <div className="instructions__number-block">
